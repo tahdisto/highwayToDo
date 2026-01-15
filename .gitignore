@@ -1,0 +1,23 @@
+# OS X
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.moved-aside
+*.xcuserstate
+*.xcworkspace
+!default.xcworkspace
+xcuserdata/
+*.sublime-project
+*.sublime-workspace
+!Package.resolved
+.swiftpm/xcode
+
+# VS Code
+.vscode/
+
+# Build scripts / Temp
+*.app/
+*.o
+*.pyc
