@@ -10,7 +10,7 @@ A beautiful, minimalist To-Do list application for macOS that lives directly in 
 - **Premium Aesthetics**: Vibrant liquid gradients and frosted glass (ultra-thin material) UI.
 - **Task Management**: Easily add, complete, and delete tasks.
 - **Prioritization**: Set High, Medium, or Low priority for your tasks.
-- **Localization**: Multi-language support (English, Russian).
+- **Localization**: Multi-language support (English, Russian, Greek).
 - **Settings**: Customizable preferences for your experience.
 
 ## Technology Stack
