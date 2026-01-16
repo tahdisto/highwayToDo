@@ -17,7 +17,7 @@ A beautiful, minimalist To-Do list application for macOS that lives directly in 
 
 - **Language**: Swift
 - **Framework**: SwiftUI
-- **Platform**: macOS (built with AppKit integration for MenuBarExtra)
+- **Platform**: macOS
 
 ## How to Run
 
