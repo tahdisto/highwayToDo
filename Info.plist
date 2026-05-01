@@ -11,12 +11,12 @@
     <key>CFBundleDisplayName</key>
     <string>Highway To-Do</string>
     <key>CFBundleShortVersionString</key>
-    <string>0.9</string>
+    <string>1.0</string>
     <key>CFBundleVersion</key>
-    <string>1</string>
+    <string>2</string>
     <key>LSUIElement</key>
     <true/>
     <key>LSMinimumSystemVersion</key>
-    <string>13.0</string>
+    <string>26.0</string>
 </dict>
 </plist>

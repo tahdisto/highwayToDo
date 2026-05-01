@@ -1,0 +1,659 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoPackageTests.xctest/Contents/MacOS/HighwayToDoPackageTests",
+      "packagePath" : "/Users/andrei/Documents/localGit/highwayToDo",
+      "productName" : "HighwayToDoPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.HighwayToDoCore-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoCore.build/sources",
+      "importPath" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/LocalizationManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/SettingsManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/TaskModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/TaskViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoCore.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "HighwayToDoCore",
+      "moduleOutputPath" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/Modules/HighwayToDoCore.swiftmodule",
+      "objects" : [
+        "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoCore.build/LocalizationManager.swift.o",
+        "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoCore.build/SettingsManager.swift.o",
+        "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoCore.build/TaskModel.swift.o",
+        "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoCore.build/TaskViewModel.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoCore.build/include/HighwayToDoCore-Swift.h",
+        "-swift-version",
+        "6",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "highwaytodo"
+      ],
+      "outputFileMapPath" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoCore.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoCore.build/LocalizationManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoCore.build/SettingsManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoCore.build/TaskModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoCore.build/TaskViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/Modules/HighwayToDoCore.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/andrei/Documents/localGit/highwayToDo/LocalizationManager.swift",
+        "/Users/andrei/Documents/localGit/highwayToDo/SettingsManager.swift",
+        "/Users/andrei/Documents/localGit/highwayToDo/TaskModel.swift",
+        "/Users/andrei/Documents/localGit/highwayToDo/TaskViewModel.swift"
+      ],
+      "tempsPath" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoCore.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.HighwayToDoPackageTests-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoPackageTests.build/sources",
+      "importPath" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/Modules/HighwayToDoTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "HighwayToDoPackageTests",
+      "moduleOutputPath" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/Modules/HighwayToDoPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoPackageTests.build/include/HighwayToDoPackageTests-Swift.h",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "highwaytodo"
+      ],
+      "outputFileMapPath" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/Modules/HighwayToDoPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.HighwayToDoTests-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoTests.build/sources",
+      "importPath" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/Tests/HighwayToDoTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/Modules/HighwayToDoCore.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "HighwayToDoTests",
+      "moduleOutputPath" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/Modules/HighwayToDoTests.swiftmodule",
+      "objects" : [
+        "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoTests.build/HighwayToDoTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j12",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "6",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "highwaytodo"
+      ],
+      "outputFileMapPath" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoTests.build/HighwayToDoTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/Modules/HighwayToDoTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/andrei/Documents/localGit/highwayToDo/Tests/HighwayToDoTests.swift"
+      ],
+      "tempsPath" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "HighwayToDoCore" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "HighwayToDoCore",
+      "-package-name",
+      "highwaytodo",
+      "-c",
+      "/Users/andrei/Documents/localGit/highwayToDo/LocalizationManager.swift",
+      "/Users/andrei/Documents/localGit/highwayToDo/SettingsManager.swift",
+      "/Users/andrei/Documents/localGit/highwayToDo/TaskModel.swift",
+      "/Users/andrei/Documents/localGit/highwayToDo/TaskViewModel.swift",
+      "-I",
+      "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoCore.build/include/HighwayToDoCore-Swift.h",
+      "-swift-version",
+      "6",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "highwaytodo",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "HighwayToDoPackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "HighwayToDoPackageTests",
+      "-package-name",
+      "highwaytodo",
+      "-c",
+      "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoPackageTests.build/include/HighwayToDoPackageTests-Swift.h",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "highwaytodo",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "HighwayToDoTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "HighwayToDoTests",
+      "-package-name",
+      "highwaytodo",
+      "-c",
+      "/Users/andrei/Documents/localGit/highwayToDo/Tests/HighwayToDoTests.swift",
+      "-I",
+      "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j12",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "6",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.4.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "highwaytodo",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "HighwayToDoCore" : [
+
+    ],
+    "HighwayToDoPackageTests" : [
+      "HighwayToDoTests",
+      "HighwayToDoCore"
+    ],
+    "HighwayToDoTests" : [
+      "HighwayToDoCore"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoCore.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/LocalizationManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/SettingsManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/TaskModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/TaskViewModel.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoCore.build/sources"
+    },
+    "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoPackageTests.build/sources"
+    },
+    "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoCore.build/LocalizationManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoCore.build/SettingsManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoCore.build/TaskModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoCore.build/TaskViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoTests.build/HighwayToDoTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/andrei/Documents/localGit/highwayToDo/Tests/HighwayToDoTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/HighwayToDoTests.build/sources"
+    },
+    "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/andrei/Documents/localGit/highwayToDo/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

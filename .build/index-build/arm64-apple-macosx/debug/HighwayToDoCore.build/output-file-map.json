@@ -1,0 +1,33 @@
+{
+  "": {
+    "swift-dependencies": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoCore.build/primary.swiftdeps"
+  },
+  "/Users/andrei/Documents/localGit/highwayToDo/LocalizationManager.swift": {
+    "dependencies": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoCore.build/LocalizationManager.d",
+    "object": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoCore.build/LocalizationManager.swift.o",
+    "swiftmodule": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoCore.build/LocalizationManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoCore.build/LocalizationManager.swiftdeps",
+    "diagnostics": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoCore.build/LocalizationManager.dia"
+  },
+  "/Users/andrei/Documents/localGit/highwayToDo/SettingsManager.swift": {
+    "dependencies": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoCore.build/SettingsManager.d",
+    "object": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoCore.build/SettingsManager.swift.o",
+    "swiftmodule": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoCore.build/SettingsManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoCore.build/SettingsManager.swiftdeps",
+    "diagnostics": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoCore.build/SettingsManager.dia"
+  },
+  "/Users/andrei/Documents/localGit/highwayToDo/TaskModel.swift": {
+    "dependencies": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoCore.build/TaskModel.d",
+    "object": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoCore.build/TaskModel.swift.o",
+    "swiftmodule": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoCore.build/TaskModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoCore.build/TaskModel.swiftdeps",
+    "diagnostics": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoCore.build/TaskModel.dia"
+  },
+  "/Users/andrei/Documents/localGit/highwayToDo/TaskViewModel.swift": {
+    "dependencies": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoCore.build/TaskViewModel.d",
+    "object": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoCore.build/TaskViewModel.swift.o",
+    "swiftmodule": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoCore.build/TaskViewModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoCore.build/TaskViewModel.swiftdeps",
+    "diagnostics": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoCore.build/TaskViewModel.dia"
+  }
+}

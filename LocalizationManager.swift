@@ -1,76 +1,76 @@
 import Foundation
 
-enum Language: String, CaseIterable, Codable {
+enum Language: String, CaseIterable, Codable, Sendable {
     case english = "en"
     case russian = "ru"
-    case greek = "el"
-    
+    case greek   = "el"
+
     var displayName: String {
         switch self {
         case .english: return "English"
         case .russian: return "Русский"
-        case .greek: return "Ελληνικά"
+        case .greek:   return "Ελληνικά"
         }
     }
 }
 
-class LocalizationManager {
+struct LocalizationManager: Sendable {
     static let shared = LocalizationManager()
-    
+
     private let translations: [String: [Language: String]] = [
         "newTaskPlaceholder": [
             .english: "New task for today...",
             .russian: "Новая задача на сегодня...",
-            .greek: "Νέα εργασία για σήμερα..."
+            .greek:   "Νέα εργασία για σήμερα..."
         ],
         "priority": [
             .english: "Priority",
             .russian: "Приоритет",
-            .greek: "Προτεραιότητα"
+            .greek:   "Προτεραιότητα"
         ],
         "priorityHigh": [
             .english: "High",
             .russian: "Высокий",
-            .greek: "Υψηλή"
+            .greek:   "Υψηλή"
         ],
         "priorityMedium": [
             .english: "Medium",
             .russian: "Средний",
-            .greek: "Μεσαία"
+            .greek:   "Μεσαία"
         ],
         "priorityLow": [
             .english: "Low",
             .russian: "Низкий",
-            .greek: "Χαμηλή"
+            .greek:   "Χαμηλή"
         ],
         "noTasksTitle": [
             .english: "No tasks for today. Chill!",
             .russian: "На сегодня задач нет. Отдыхай!",
-            .greek: "Καμία εργασία για σήμερα. Χαλάρωσε!"
+            .greek:   "Καμία εργασία για σήμερα. Χαλάρωσε!"
         ],
         "quit": [
             .english: "Quit",
             .russian: "Выйти",
-            .greek: "Έξοδος"
+            .greek:   "Έξοδος"
         ],
         "settings": [
             .english: "Settings",
             .russian: "Настройки",
-            .greek: "Ρυθμίσεις"
+            .greek:   "Ρυθμίσεις"
         ],
         "language": [
             .english: "Language",
             .russian: "Язык",
-            .greek: "Γλώσσα"
+            .greek:   "Γλώσσα"
         ],
         "back": [
             .english: "Back",
             .russian: "Назад",
-            .greek: "Πίσω"
+            .greek:   "Πίσω"
         ]
     ]
-    
+
     func localized(_ key: String, using language: Language) -> String {
-        return translations[key]?[language] ?? key
+        translations[key]?[language] ?? key
     }
 }

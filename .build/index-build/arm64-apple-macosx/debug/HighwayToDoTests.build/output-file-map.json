@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoTests.build/primary.swiftdeps"
+  },
+  "/Users/andrei/Documents/localGit/highwayToDo/Tests/HighwayToDoTests.swift": {
+    "dependencies": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoTests.build/HighwayToDoTests.d",
+    "object": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoTests.build/HighwayToDoTests.swift.o",
+    "swiftmodule": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoTests.build/HighwayToDoTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoTests.build/HighwayToDoTests.swiftdeps",
+    "diagnostics": "/Users/andrei/Documents/localGit/highwayToDo/.build/index-build/arm64-apple-macosx/debug/HighwayToDoTests.build/HighwayToDoTests.dia"
+  }
+}

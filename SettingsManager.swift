@@ -1,11 +1,25 @@
-import SwiftUI
+import Foundation
+import Observation
 
-class SettingsManager: ObservableObject {
+@MainActor
+@Observable
+final class SettingsManager {
+    @MainActor
     static let shared = SettingsManager()
-    
-    @AppStorage("language") var currentLanguage: Language = .english
-    
+
+    var currentLanguage: Language {
+        didSet { userDefaults.set(currentLanguage.rawValue, forKey: "language") }
+    }
+
+    private let userDefaults: UserDefaults
+
+    init(userDefaults: UserDefaults = .standard) {
+        self.userDefaults = userDefaults
+        let raw = userDefaults.string(forKey: "language") ?? Language.english.rawValue
+        self.currentLanguage = Language(rawValue: raw) ?? .english
+    }
+
     func localized(_ key: String) -> String {
-        return LocalizationManager.shared.localized(key, using: currentLanguage)
+        LocalizationManager.shared.localized(key, using: currentLanguage)
     }
 }

@@ -1,32 +1,41 @@
 import SwiftUI
+import AppKit
 
 @main
 struct HighwayTodoApp: App {
-    @StateObject private var settings = SettingsManager.shared
-    
     var body: some Scene {
         MenuBarExtra {
             ContentView()
-                .environmentObject(settings)
+                .environment(SettingsManager.shared)
         } label: {
-            if let iconPath = Bundle.main.path(forResource: "menubar_icon", ofType: "png"),
-               let nsImage = NSImage(contentsOfFile: iconPath) {
-                let _ = {
-                    nsImage.isTemplate = true
-                    nsImage.size = NSSize(width: 18, height: 18)
-                }()
-                Image(nsImage: nsImage)
-            } else {
-                Image(systemName: "checklist")
-            }
+            menuBarLabel
         }
         .menuBarExtraStyle(.window)
-        
+
         Window("Settings", id: "settings") {
             SettingsView()
-                .environmentObject(settings)
+                .environment(SettingsManager.shared)
         }
         .windowResizability(.contentSize)
         .defaultSize(width: 400, height: 400)
+    }
+
+    @ViewBuilder
+    private var menuBarLabel: some View {
+        if let image = loadMenuBarImage() {
+            Image(nsImage: image)
+        } else {
+            Image(systemName: "checklist")
+        }
+    }
+
+    private func loadMenuBarImage() -> NSImage? {
+        guard
+            let path  = Bundle.main.path(forResource: "menubar_icon", ofType: "png"),
+            let image = NSImage(contentsOfFile: path)
+        else { return nil }
+        image.isTemplate = true
+        image.size = NSSize(width: 18, height: 18)
+        return image
     }
 }

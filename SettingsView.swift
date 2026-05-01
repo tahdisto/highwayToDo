@@ -1,44 +1,38 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @EnvironmentObject var settings: SettingsManager
-    
-    // Fixed Gradient for Settings Window
-    private let settingsGradient: [Color] = [
-        Color(red: 0.2, green: 0.1, blue: 0.4),
-        Color(red: 0.1, green: 0.1, blue: 0.3)
-    ]
-    
+    @Environment(SettingsManager.self) private var settings
+
+    private let ambientGradient = LinearGradient(
+        colors: [Color(red: 0.20, green: 0.10, blue: 0.40), Color(red: 0.10, green: 0.10, blue: 0.30)],
+        startPoint: .top,
+        endPoint: .bottom
+    )
+
     var body: some View {
+        // @Bindable needed to derive two-way bindings from an @Observable environment value
+        @Bindable var settings = settings
+
         ZStack {
-            // Base Material
-            Rectangle()
-                .fill(.ultraThinMaterial)
+            ambientGradient
+                .opacity(0.25)
                 .ignoresSafeArea()
-            
-            // Tint Gradient
-            LinearGradient(gradient: Gradient(colors: settingsGradient), startPoint: .top, endPoint: .bottom)
-                .opacity(0.3)
-                .ignoresSafeArea()
-            
+
             VStack(spacing: 30) {
-                // Header
-                HStack {
+                HStack(spacing: 8) {
                     Image(systemName: "slider.horizontal.3")
                         .font(.title2)
                     Text(settings.localized("settings"))
-                        .font(.title2)
-                        .fontWeight(.bold)
+                        .font(.title2.bold())
                 }
                 .foregroundStyle(.primary)
                 .padding(.top, 20)
-                
-                // Language Selection
+
                 VStack(alignment: .leading, spacing: 10) {
                     Label(settings.localized("language"), systemImage: "globe")
                         .font(.headline)
                         .foregroundStyle(.secondary)
-                    
+
                     Picker("Language", selection: $settings.currentLanguage) {
                         ForEach(Language.allCases, id: \.self) { lang in
                             Text(lang.displayName).tag(lang)
@@ -48,13 +42,12 @@ struct SettingsView: View {
                     .labelsHidden()
                 }
                 .padding()
-                .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 12))
+                .glassEffect(in: RoundedRectangle(cornerRadius: 12))
                 .padding(.horizontal)
-                
+
                 Spacer()
-                
-                // Info
-                Text("Highway To-Do v. 0.9 Pre-Release")
+
+                Text("Highway To-Do v1.0")
                     .font(.caption)
                     .foregroundStyle(.secondary)
                     .padding(.bottom, 20)
@@ -62,4 +55,9 @@ struct SettingsView: View {
         }
         .frame(minWidth: 400, minHeight: 400)
     }
+}
+
+#Preview {
+    SettingsView()
+        .environment(SettingsManager())
 }
