@@ -67,6 +67,26 @@ struct LocalizationManager: Sendable {
             .english: "Back",
             .russian: "Назад",
             .greek:   "Πίσω"
+        ],
+        "theme": [
+            .english: "Theme",
+            .russian: "Тема",
+            .greek:   "Θέμα"
+        ],
+        "themeSystem": [
+            .english: "System",
+            .russian: "Системная",
+            .greek:   "Σύστημα"
+        ],
+        "themeLight": [
+            .english: "Light",
+            .russian: "Светлая",
+            .greek:   "Φωτεινό"
+        ],
+        "themeDark": [
+            .english: "Dark",
+            .russian: "Тёмная",
+            .greek:   "Σκοτεινό"
         ]
     ]
 

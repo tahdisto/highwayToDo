@@ -11,13 +11,6 @@ struct HighwayTodoApp: App {
             menuBarLabel
         }
         .menuBarExtraStyle(.window)
-
-        Window("Settings", id: "settings") {
-            SettingsView()
-                .environment(SettingsManager.shared)
-        }
-        .windowResizability(.contentSize)
-        .defaultSize(width: 400, height: 400)
     }
 
     @ViewBuilder

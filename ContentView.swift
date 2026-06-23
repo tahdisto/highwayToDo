@@ -6,7 +6,7 @@ struct ContentView: View {
     @State private var viewModel = TaskViewModel()
     @State private var newTaskTitle = ""
     @State private var selectedPriority: Priority = .medium
-    @Environment(\.openWindow) private var openWindow
+    @State private var showingSettings = false
 
     // Ambient gradient gives Liquid Glass its purple-blue iridescence
     private let ambientGradient = LinearGradient(
@@ -26,8 +26,13 @@ struct ContentView: View {
                 .ignoresSafeArea()
 
             VStack(spacing: 0) {
-                inputHeader
-                taskContent
+                if showingSettings {
+                    settingsContent
+                } else {
+                    inputHeader
+                    taskContent
+                }
+                Spacer(minLength: 0)
                 footer
             }
         }
@@ -49,7 +54,7 @@ struct ContentView: View {
             Button(action: addNewTask) {
                 Image(systemName: "plus.circle.fill")
                     .font(.system(size: 28))
-                    .foregroundStyle(.primary)
+                    .foregroundStyle(Color.accentColor)
                     .contentTransition(.symbolEffect(.replace))
             }
             .buttonStyle(.plain)
@@ -122,17 +127,77 @@ struct ContentView: View {
         .frame(height: 350)
     }
 
+    private var settingsContent: some View {
+        @Bindable var settings = settings
+
+        return VStack(spacing: 16) {
+            HStack(spacing: 8) {
+                Image(systemName: "slider.horizontal.3")
+                    .font(.title2)
+                Text(settings.localized("settings"))
+                    .font(.title2.bold())
+            }
+            .foregroundStyle(.primary)
+            .padding(.top, 20)
+
+            VStack(alignment: .leading, spacing: 10) {
+                Label(settings.localized("language"), systemImage: "globe")
+                    .font(.headline)
+                    .foregroundStyle(.secondary)
+
+                Picker("Language", selection: $settings.currentLanguage) {
+                    ForEach(Language.allCases, id: \.self) { lang in
+                        Text(lang.displayName).tag(lang)
+                    }
+                }
+                .pickerStyle(.segmented)
+                .labelsHidden()
+            }
+            .padding()
+            .glassEffect(in: RoundedRectangle(cornerRadius: 12))
+            .padding(.horizontal)
+
+            VStack(alignment: .leading, spacing: 10) {
+                Label(settings.localized("theme"), systemImage: "paintbrush")
+                    .font(.headline)
+                    .foregroundStyle(.secondary)
+
+                Picker("Theme", selection: $settings.currentTheme) {
+                    Text(settings.localized("themeSystem")).tag(AppTheme.system)
+                    Text(settings.localized("themeLight")).tag(AppTheme.light)
+                    Text(settings.localized("themeDark")).tag(AppTheme.dark)
+                }
+                .pickerStyle(.segmented)
+                .labelsHidden()
+            }
+            .padding()
+            .glassEffect(in: RoundedRectangle(cornerRadius: 12))
+            .padding(.horizontal)
+
+            Spacer()
+
+            Text("Highway To-Do v0.9.2")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+                .padding(.bottom, 10)
+        }
+    }
+
     private var footer: some View {
         HStack {
             Button {
-                openWindow(id: "settings")
-                NSApp.activate()           // NSApp.activate(ignoringOtherApps:) deprecated macOS 14
+                withAnimation(.spring(duration: 0.25)) {
+                    showingSettings.toggle()
+                }
             } label: {
-                Label(settings.localized("settings"), systemImage: "gearshape.fill")
-                    .font(.caption)
-                    .foregroundStyle(.primary)
-                    .padding(6)
-                    .glassEffect(.regular.interactive(), in: RoundedRectangle(cornerRadius: 8))
+                Label(
+                    settings.localized(showingSettings ? "back" : "settings"),
+                    systemImage: showingSettings ? "chevron.left" : "gearshape.fill"
+                )
+                .font(.caption)
+                .foregroundStyle(.primary)
+                .padding(6)
+                .glassEffect(.regular.interactive(), in: RoundedRectangle(cornerRadius: 8))
             }
             .buttonStyle(.plain)
 
